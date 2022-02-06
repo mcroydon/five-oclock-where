@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Cities from '../components/cities'
 import When from '../components/when'
@@ -39,7 +38,7 @@ export default function Home(props) {
       </main>
 
       <footer className={styles.footer}>
-        <p>Built using <a href="https://nextjs.org">next.js</a> with the help of <a href="https://www.npmjs.com/package/@vvo/tzdb">@vvo/tzdb</a>, <a href="https://moment.github.io/luxon/#/">luxon</a> and the <a href="https://www.iana.org/time-zones">Time Zone Database</a>. Hosted on <a href="https://vercel.com">Vercel</a>. MIT Licensed.</p>
+        <p>Built using <a href="https://nextjs.org">next.js</a> with the help of <a href="https://www.npmjs.com/package/@vvo/tzdb">@vvo/tzdb</a>, <a href="https://moment.github.io/luxon/#/">luxon</a> and the <a href="https://www.iana.org/time-zones">Time Zone Database</a>. Hosted on <a href="https://vercel.com">Vercel</a>. <a href="https://github.com/mcroydon/five-oclock-where">MIT Licensed</a>.</p>
       </footer>
     </div>
   )
