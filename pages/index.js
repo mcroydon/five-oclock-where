@@ -24,7 +24,11 @@ export default function Home(props) {
     <div className={styles.container}>
       <Head>
         <title>It&apos;s Five O&apos;Clock Where?</title>
+        <meta property="og:title" content="It's Five O'Clock Where?" />
         <meta name="description" content="A list of places where it's currently 5 o'clock." />
+        <meta property="og:description" content="A list of places where it's currently 5 o'clock." />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:creator" content="@mc" /> 
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
