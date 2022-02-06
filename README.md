@@ -4,14 +4,10 @@ It's sole purpose is to list places in the world where it is currently five o'cl
 
 ## Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
+After checking out this repository, run `npm install` from this directory and then `npm run dev` to get started.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 
+## License
+
+Released under the MIT license.
