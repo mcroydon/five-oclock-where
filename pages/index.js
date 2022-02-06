@@ -38,7 +38,7 @@ export default function Home(props) {
       </main>
 
       <footer className={styles.footer}>
-        <p>Built by <a href="https://twitter.com/mc">@mc</a>using <a href="https://nextjs.org">next.js</a> with the help of <a href="https://www.npmjs.com/package/@vvo/tzdb">@vvo/tzdb</a>, <a href="https://moment.github.io/luxon/#/">luxon</a> and the <a href="https://www.iana.org/time-zones">Time Zone Database</a>. Hosted on <a href="https://vercel.com">Vercel</a>. <a href="https://github.com/mcroydon/five-oclock-where">MIT Licensed</a>. Inspired by <a href="https://en.wikipedia.org/wiki/It%27s_Five_O%27Clock_Somewhere">the song</a>.</p>
+        <p>Built by <a href="https://twitter.com/mc">@mc</a> using <a href="https://nextjs.org">next.js</a> with the help of <a href="https://www.npmjs.com/package/@vvo/tzdb">@vvo/tzdb</a>, <a href="https://moment.github.io/luxon/#/">luxon</a> and the <a href="https://www.iana.org/time-zones">Time Zone Database</a>. Hosted on <a href="https://vercel.com">Vercel</a>. <a href="https://github.com/mcroydon/five-oclock-where">MIT Licensed</a>. Inspired by <a href="https://en.wikipedia.org/wiki/It%27s_Five_O%27Clock_Somewhere">the song</a>.</p>
       </footer>
     </div>
   )
