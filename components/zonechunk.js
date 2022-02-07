@@ -10,7 +10,7 @@ function ZoneChunk(props) {
     return <Row>
 
     {zones.map((zone, index) => {
-      return <Col sm={4} className="my-4"><Card key={index} className="h-100">
+      return <Col sm={4} className="my-4" key={index}><Card className="h-100">
         <Card.Body>
           <Card.Title>{zone.alternativeName}</Card.Title>
           <Card.Text>It&apos;s <When name={zone.name} /> on {zone.alternativeName} in <Cities cities={zone.mainCities} /> in {zone.countryName}</Card.Text>
@@ -18,13 +18,13 @@ function ZoneChunk(props) {
         </Card></Col>
     })}
     {zones.length == 1 &&
-        <Col sm={4}/>
+        <Col md={4}/>
     }
     {zones.length == 1 &&
-        <Col sm={4} />
+        <Col md={4} />
     }
     {zones.length == 2 &&
-        <Col sm={4}/>
+        <Col md={4}/>
     }
     </Row>
   }

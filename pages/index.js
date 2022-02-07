@@ -1,16 +1,10 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import Cities from '../components/cities'
-import When from '../components/when'
 import ZoneChunk from '../components/zonechunk'
 
 import { getTimeZones } from "@vvo/tzdb";
 import { DateTime } from "luxon";
 
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
 
 export async function getServerSideProps() {
   const utcDate = new Date(Date.now());
@@ -41,8 +35,8 @@ export default function Home(props) {
         <meta name="twitter:creator" content="@mc" /> 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div class="px-4 py-5 my-5 text-center">
-        <h1 class="display-5 fw-bold">It&apos;s Five O&apos;Clock Where?</h1>
+      <div className="px-4 py-5 my-5 text-center">
+        <h1 className="display-5 fw-bold">It&apos;s Five O&apos;Clock Where?</h1>
       </div>
       {props.chunkedZones.map((zones, index) => {
         return <ZoneChunk key={index} zones={zones}/>
