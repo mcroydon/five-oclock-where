@@ -10,21 +10,21 @@ function ZoneChunk(props) {
     return <Row>
 
     {zones.map((zone, index) => {
-      return <Col><Card key={index}>
+      return <Col sm={4} className="my-4"><Card key={index} className="h-100">
         <Card.Body>
-          <Card.Title>ZoneChunk Title</Card.Title>
+          <Card.Title>{zone.alternativeName}</Card.Title>
           <Card.Text>It&apos;s <When name={zone.name} /> on {zone.alternativeName} in <Cities cities={zone.mainCities} /> in {zone.countryName}</Card.Text>
         </Card.Body>
         </Card></Col>
     })}
     {zones.length == 1 &&
-        <Col />
+        <Col sm={4}/>
     }
     {zones.length == 1 &&
-        <Col />
+        <Col sm={4} />
     }
     {zones.length == 2 &&
-        <Col />
+        <Col sm={4}/>
     }
     </Row>
   }

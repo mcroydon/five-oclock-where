@@ -41,19 +41,14 @@ export default function Home(props) {
         <meta name="twitter:creator" content="@mc" /> 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Row>
-        <Col>
-        <h1 className={styles.title}>
-          It&apos;s Five O&apos;Clock Where?
-        </h1>
-        </Col>
-      </Row>
+      <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold">It&apos;s Five O&apos;Clock Where?</h1>
+      </div>
       {props.chunkedZones.map((zones, index) => {
         return <ZoneChunk key={index} zones={zones}/>
       })}
 
-      <footer className={styles.footer}>
+      <footer className="text-center my-3">
         <p>Built by <a href="https://twitter.com/mc">@mc</a> using <a href="https://nextjs.org">next.js</a> with the help of <a href="https://www.npmjs.com/package/@vvo/tzdb">@vvo/tzdb</a>, <a href="https://moment.github.io/luxon/#/">luxon</a> and the <a href="https://www.iana.org/time-zones">Time Zone Database</a>. Hosted on <a href="https://vercel.com">Vercel</a>. <a href="https://github.com/mcroydon/five-oclock-where">MIT Licensed</a>. Inspired by <a href="https://en.wikipedia.org/wiki/It%27s_Five_O%27Clock_Somewhere">the song</a>.</p>
       </footer>
     </Container>
